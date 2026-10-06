@@ -26,17 +26,17 @@ Grand River Hospital
 
 The browser simulates:
 
-- three buses
-- four stations
-- passenger queues
-- background cross traffic
-- three traffic signals
+- a four-lane bidirectional corridor
+- three buses and multiple cars
+- lane-aware vehicle movement
+- car-following / minimum spacing
+- lane changes around slower traffic
+- queues at red traffic signals
+- four passenger stops
 - a regional-rail transfer surge at Central
 - fixed-signal baseline mode
 - TransitOps bus signal priority
-- boarding counts
-- red-light delay
-- controller event feed
+- boarding counts, lane changes, signal stops, and controller events
 
 ## Run locally
 
@@ -62,7 +62,7 @@ npm start
 
 ## Purpose
 
-The visual design is intentionally basic. The goal is to make TransitOps control behavior easy to understand:
+The visual design is intentionally lightweight, but the road behaviour is more detailed. Vehicles follow lane, spacing, speed, signal, and lane-change rules so students can see how network behaviour emerges:
 
 ```text
 observe network state
